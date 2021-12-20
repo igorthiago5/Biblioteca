@@ -6,19 +6,6 @@
 	<title>Biblioteca nacional</title>
 	<link rel="stylesheet" type="text/css" href="../BootStrap5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../Estilo/estilo.css">
-	<script >
-		function revelarSenha(){
-			let senha = document.getElementById('senha')
-			if(senha.type ="password"){
-				senha.type="text"
-			}else {
-				senha.type="password"
-			
-			}
-		}
-
-		
-	</script>
 	
 </head>
 <body>
@@ -34,7 +21,7 @@
 			<div class="collapse navbar-collapse" id="navi">
 		   <ul class="navbar-nav ms-lg-auto">
 		       <li class="nav-item">
-		       	<a href="index.html" class="nav-link">Home</a>
+		       	<a href="index-.html" class="nav-link">Home</a>
 		       </li>
 		          <li class="nav-item">
 		       	<a href="login.html" class="nav-link">Login</a>
@@ -46,39 +33,49 @@
 			</div>
 		</nav>
 	</header>
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="centro">
-						<div class="login ">
-							<h5 class="centro">Login</h5>
-							<div>
-								caso não tenha conta <a href="registro_cliente.html">clique aqui</a>
-								<form action="" method="post">
-									
-									<label class="form-label">Email</label>
-									<input type="email" name="email_login" class="form-control" >
-									<label class="form-label">senha</label>
-									<input type="password" name="senha_login" class="form-control" id="senha">
-									<input type="checkbox" name="" id="checkbox" onclick="revelarSenha()">
-									<label >Mostrar a senha</label>
-									<div class="d-grid gap-2">
-										<button class="btn btn-secondary">
-											Logar
-										</button>
-									</div>
-								</form>
-							</div>
+		<section >
+			<div class="container">
+				<div class="row">
+					
+						<div class="alinhamento-centro">
+							<form action="" method="post" class="form-cliente col-md-8" >
+								<div class="input-group mt-3 ">
+									<span class="input-group-text">Nome</span>
+									<input type="text" name="nome" class="input-group-text" >
+								</div>
+								<div class="input-group mt-3">
+									<span class="input-group-text">Sobrenome</span>
+									<input type="text" name="sobrenome" class="input-group-text" >
+								</div>
+								<div class="input-group mt-3">
+									<span class="input-group-text">Email</span>
+									<input type="email" name="email" class="form-control" >
+								</div>
+								<div class="input-group mt-3">
+									<span class="input-group-text">Cep</span>
+									<input type="text" name="cep" class="input-group-text" >
+								</div>
+									<div class="input-group mt-3">
+									<span class="input-group-text">Rua</span>
+									<input type="email" name="rua" class="form-control" >
+								</div>
+									<div class="input-group mt-3">
+									<span class="input-group-text">Bairro</span>
+									<input type="email" name="bairro" class="form-control" >
+								</div>
+								<div class="d-grid gap-2 mt-3">
+									<button class="Botao btn btn-secondary">
+										Criar
+									</button>
+								</div>
+
+
+							</form>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-
-
-
+		</section>
 	<footer>
 		<div class="container mt-5">
 			<div class="row">
@@ -86,10 +83,10 @@
 					 <ul class="navbar-nav ms-lg-auto">
 					 	<h5>Links úteis</h5>
 		       <li class="nav-item">
-		       	<a href="index.html" class="nav-link text-white">Home</a>
+		       	<a href="index.html" class="nav-link">Home</a>
 		       </li>
 		          <li class="nav-item">
-		       	<a href="login.html" class="nav-link text-white">Login</a>
+		       	<a href="login.html" class="nav-link">Login</a>
 		       </li>
 		       
 		       
